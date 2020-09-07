@@ -10,6 +10,9 @@ import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import { InitialFeedback } from './forms';
 
+
+
+
 export const ConfigureStore = () => {
     const store = createStore(
         combineReducers({
@@ -19,6 +22,7 @@ export const ConfigureStore = () => {
             leaders: Leaders,
             auth: Auth,
             favorites,
+           
             ...createForms({
                 feedback: InitialFeedback
             })

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
 
@@ -59,6 +59,9 @@ import { Loading } from './LoadingComponent';
                     </div>
                     <div className="row">
                         {menu}
+                    </div>
+                    <div className="row">
+                       <Button onClick ={() => props.deleteDish(props.dish._id) }>Sterge</Button>
                     </div>
                 </div>
             );

@@ -1,7 +1,9 @@
-import { config } from './config';
-import firebase from 'firebase';
+import { firebaseConfig } from './config';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/firestore';
 
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 
 export const auth = firebase.auth();
 

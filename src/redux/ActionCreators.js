@@ -1,6 +1,12 @@
 import * as ActionTypes from './ActionTypes';
 import { auth, firestore, fireauth, firebasestore } from '../firebase/firebase';
 
+
+export const deleteDish =(dishId) => ({
+    type: ActionTypes.DELETE_DISH
+});
+
+
 export const addComment = (comment) => ({
     type: ActionTypes.ADD_COMMENT,
     payload: comment

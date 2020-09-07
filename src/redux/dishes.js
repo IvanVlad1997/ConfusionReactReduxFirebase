@@ -15,6 +15,9 @@ export const Dishes = (state = {
         case ActionTypes.DISHES_FAILED:
             return {...state, isLoading: false, errMess: action.payload, dishes: []};
 
+        case ActionTypes.DELETE_DISH:
+            return{...state, dishes: []};
+
         default:
             return state;
     }
